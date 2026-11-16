@@ -13,7 +13,7 @@ if [ ! -d "backend/venv" ]; then
     echo "Creating Python virtual environment..."
     python3 -m venv backend/venv
     echo "Installing backend dependencies..."
-    backend/venv/bin/pip install fastapi uvicorn pydantic sqlalchemy pyjwt httpx python-multipart
+    backend/venv/bin/pip install -r requirements.txt
 fi
 
 # Check Node environment

@@ -74,7 +74,7 @@ python3 -m venv backend/venv
 source backend/venv/bin/activate
 
 # Install dependencies
-pip install fastapi uvicorn pydantic sqlalchemy pyjwt httpx python-multipart
+pip install -r requirements.txt
 
 # Start server
 PYTHONPATH=backend uvicorn app.main:app --host 127.0.0.1 --port 8000
